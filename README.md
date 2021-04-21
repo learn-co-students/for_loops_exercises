@@ -1,7 +1,7 @@
 
-# More For Loop Practice
+# For Loop Practice
 
-For this warmup, we will practice for loops by navigating a Video Games data set which is read in via the cell below.
+For this warmup, we will practice for loops by navigating a video game data set which is read in via the cell below.
 
 
 ```python
@@ -133,7 +133,7 @@ While there may be more efficient ways to find answers to the following question
 
 ### Task 1: For Loops with if statements
 
-How many Video Games were released by Nintendo?  
+How many video games were released by Nintendo?  
 
 Loop through the publisher list and count the number of occurences.
 
@@ -157,9 +157,6 @@ for p in publisher:
     if p == 'Nintendo':
         count += 1
 ```
-
-    295
-
 
 
 ```python
@@ -227,11 +224,18 @@ titles = list(data['Game Title'])
 
 
 ```python
+# Replace None with appropriate value
+count_sonic = None
+# your code here
+```
+
+
+```python
 #__SOLUTION__
-count = 0
+count_sonic = 0
 for title in titles:
     if 'Sonic' in title:
-        count+=1
+        count_sonic+=1
 ```
 
 
@@ -240,7 +244,7 @@ for title in titles:
 import re
 pattern = '.*Sonic.*'
 
-assert count == len(data['Game Title'][
+assert count_sonic == len(data['Game Title'][
                      data['Game Title'].apply(
                          lambda x: re.match(pattern, x)!=None)])
 print('You found the correct number of Sonic the Hedgehog games')
@@ -252,7 +256,7 @@ print('You found the correct number of Sonic the Hedgehog games')
 
 ### Task 4: Dictionaries
 
-Create a dictionary which has Publisher as keys and a second dictionary as values. The second dictionary should have genre as keys and the count of each genre as values.
+Create a dictionary which has `publisher` as keys and a second dictionary as values. The second dictionary should have `genre` as keys and the `count` of each genre as values.
 
 
 
