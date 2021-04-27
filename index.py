@@ -4,7 +4,7 @@ import re
 data = pd.read_excel('data/Video Games Sales.xlsx').dropna()
 data.head()
 
-### Task 1: For Loops with if statements
+### Task 1: For Loops with If Statements
 '''
 How many Video Games were released by Nintendo?  
 
